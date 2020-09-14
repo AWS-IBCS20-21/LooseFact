@@ -9,7 +9,7 @@ public class CoffeeShop {
     System.out.println("");
 
     Scanner userorder = new Scanner(System.in);
-    String order = userorder.next();
+    String order = userorder.nextLine();
 
     System.out.println("");
     System.out.println("Processing thy " + order + ".");
@@ -18,7 +18,7 @@ public class CoffeeShop {
     System.out.println("");
 
     Scanner userIn = new Scanner(System.in);
-    String name = userIn.next();
+    String name = userIn.nextLine();
 
     System.out.println("");
     System.out.println("Thee name art " + name + "?");
