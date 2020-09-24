@@ -32,9 +32,32 @@ public class FavAnimal {
   public static void main(String[] args) {
     FavAnimal ibcs = new FavAnimal();
 
-    ibcs.changeSizeInches(12);
+    System.out.println("Pick one of the following numbers.");
+    System.out.println("1. Animal name");
+    System.out.println("2. Animal habitat");
+    System.out.println("3. Animal size in inches");
+    System.out.println("4. A similar animal");
+    System.out.println("5. Fun fact");
 
-    System.out.println(ibcs.returnSizeInches());
+    Scanner choice = new Scanner(System.in);
+    String ch = choice.next();
+
+    if (ch.equals("1")) {
+      System.out.println(ibcs.returnName());
+    }
+    if (ch.equals("2")) {
+      System.out.println(ibcs.returnHabitat());
+    }
+    if (ch.equals("3")) {
+      System.out.println(ibcs.returnSizeInches());
+    }
+    if (ch.equals("4")) {
+      System.out.println(ibcs.returnSimilarAnimals());
+    }
+    if (ch.equals("5")) {
+      System.out.println(ibcs.returnSpeciality());
+    }
+
 }
 
 }
