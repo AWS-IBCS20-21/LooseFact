@@ -1,9 +1,6 @@
 import java.util.*;
 class Calculator {
-  public Calculator() {
-
-  }
-
+  
   public double Addition(double num1, double num2) {
     double result1 = num1 + num2;
     return result1;
