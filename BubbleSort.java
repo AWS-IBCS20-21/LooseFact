@@ -27,6 +27,7 @@ public class BubbleSort {
         System.out.println(" ");
       }
     System.out.println(" ");
+    long erg = System.nanoTime();
     for (int u = 0; u < array.length - 1; u++){
       for (int a = 0; a < array.length - 1; a++){
         if (array[a] > array[a + 1]) {
@@ -37,14 +38,19 @@ public class BubbleSort {
           array[a + 1] = f + g;
         }
 
+
       }
     }
+    long frrrg = System.nanoTime();
+    long o = frrrg - erg;
     System.out.println("The organized list is:");
 
     for (int f : array) {
         System.out.print(f);
         System.out.println(" ");
       }
+    System.out.println(" ");
+    System.out.println("The time it took to the make organized list is " + o + " nanoseconds.");
 
   }
 }
