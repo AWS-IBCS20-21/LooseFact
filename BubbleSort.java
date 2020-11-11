@@ -50,7 +50,7 @@ public class BubbleSort {
         System.out.println(" ");
       }
     System.out.println(" ");
-    System.out.println("The time it took to the make organized list is " + o + " nanoseconds.");
+    System.out.println("The time it took to make the organized list is " + o + " nanoseconds.");
 
   }
 }
