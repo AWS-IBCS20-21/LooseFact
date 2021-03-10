@@ -98,16 +98,6 @@ public class FLA {
       Ans.setText("You got " + Env.size() + " correct out of 10.");
     }
     if (Ans.getText() == "You got " + Env.size() + " correct out of 10."){
-      Svoc.put("to come", "volver");
-      Svoc.put("to leave", "salir");
-      Svoc.put("to fix", "arreglar");
-      Svoc.put("to feel", "sentirse");
-      Svoc.put("to sit", "sentirse");
-      Svoc.put("to eat", "comer");
-      Svoc.put("to drink", "beber");
-      Svoc.put("to sleep", "dormir");
-      Svoc.put("to break", "romper");
-      Svoc.put("to see", "ver");
       Random r = new Random();
       int sizeA = Env.size();
       for (int i=0; i<sizeA; i++) {
