@@ -22,6 +22,7 @@ public class FLA {
     ArrayList<String> Q = new ArrayList<String>();
     ArrayList<String> Q2 = new ArrayList<String>();
     ArrayList<String> NUM = new ArrayList<String>();
+    ArrayList<String> NUM2 = new ArrayList<String>();
     NUM.add("1");
     NUM.add("2");
     NUM.add("3");
@@ -32,11 +33,22 @@ public class FLA {
     NUM.add("8");
     NUM.add("9");
     NUM.add("10");
+    NUM2.add("1");
+    NUM2.add("2");
+    NUM2.add("3");
+    NUM2.add("4");
+    NUM2.add("5");
+    NUM2.add("6");
+    NUM2.add("7");
+    NUM2.add("8");
+    NUM2.add("9");
+    NUM2.add("10");
     Random r = new Random();
     int sizeA = Env.size();
     for (int i=0; i<sizeA; i++) {
       int choice = r.nextInt(Env.size());
       Q.add(Env.get(choice));
+      Env.remove(Env.get(choice));
     }
     for (int i=0; i<sizeA; i++) {
       String bb = Q.get(i);
@@ -110,6 +122,7 @@ public class FLA {
       ArrayList<String> Q = new ArrayList<String>();
       ArrayList<String> Q2 = new ArrayList<String>();
       ArrayList<String> NUM = new ArrayList<String>();
+      ArrayList<String> NUM2 = new ArrayList<String>();
       NUM.add("1");
       NUM.add("2");
       NUM.add("3");
@@ -120,6 +133,16 @@ public class FLA {
       NUM.add("8");
       NUM.add("9");
       NUM.add("10");
+      NUM2.add("1");
+      NUM2.add("2");
+      NUM2.add("3");
+      NUM2.add("4");
+      NUM2.add("5");
+      NUM2.add("6");
+      NUM2.add("7");
+      NUM2.add("8");
+      NUM2.add("9");
+      NUM2.add("10");
       Random r = new Random();
       int sizeA = Env.size();
       for (int i=0; i<sizeA; i++) {
