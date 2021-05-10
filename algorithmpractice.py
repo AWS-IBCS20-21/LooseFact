@@ -192,6 +192,7 @@ def main():
     print(LOI([1, 2, 0, 2, 7], 9))
     print(LOI([1, 3, 5], 10))
     print(LOI([1, 0, 0, 0, 7], 8))
+    print(LOI([3, 4, 7, 8, 10], 19))
 
     print(" ")
 if __name__ == "__main__":
