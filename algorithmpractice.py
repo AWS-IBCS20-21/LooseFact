@@ -1,3 +1,23 @@
+def LOI(L, G):
+    har = 0
+    for i in range (len(L)):
+        har = L[i]
+        for i in range (len(L)-1):
+            har = har + L[i + 1]
+            for i in range (len(L)-2):
+                har = har + L[i + 2]
+                if (har == G):
+                    return True
+    return False
+
+def SUM(arg):
+    har = 0
+    for i in range (len(arg)):
+        if (arg[i] != 6):
+            if (arg[i] != 5):
+                har = har + arg[i]
+    return har
+
 def lonesum(a,b,c):
     d = 0
     e = a
@@ -163,5 +183,16 @@ def main():
 
     print(" ")
 
+    print(SUM([5, 6, 5, 5, 1]))
+    print(SUM([1, 6, 55, 5, 1]))
+
+    print(" ")
+
+    print(LOI([1, 2, 0, 2, 4], 8))
+    print(LOI([1, 2, 0, 2, 7], 9))
+    print(LOI([1, 3, 5], 10))
+    print(LOI([1, 0, 0, 0, 7], 8))
+
+    print(" ")
 if __name__ == "__main__":
     main()
